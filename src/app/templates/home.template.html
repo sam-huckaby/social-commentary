@@ -1,0 +1,13 @@
+<!-- Search Bar Area -->
+<div class="bible_verse_search_container" ng-controller="timothy.ctrl.search">
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="Bible Verse To Read (i.e. John 11:35)" ng-model="searchwords">
+		<span class="input-group-btn">
+			<button class="btn btn-default" type="button" ng-click="search()">Search</button>
+		</span>
+	</div>
+	<pre ng-model="result">
+		{{result}}
+	</pre>
+</div>
+<!-- / Search Bar Area -->

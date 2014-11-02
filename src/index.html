@@ -1,0 +1,55 @@
+<html>
+
+	<head>
+
+		<title>Project Timothy</title>
+
+		<link rel="stylesheet" type="text/css" href="include/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="include/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="include/css/custom.css">
+
+		<script src="include/js/xml2json.min.js"></script>
+		<script src="include/js/angular.min.js"></script>
+		<script src="include/js/angular-route.min.js"></script>
+		<script src="include/js/ui-bootstrap-tpls-0.11.2.min.js"></script>
+
+		<script src="app/app.js"></script>
+		<script src="app/search.ctrl.js"></script>
+
+		<base href="/">
+
+	</head>
+
+	<body ng-app="ProjectTimothy">
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		  <div class="container-fluid">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			  </button>
+			  <a class="navbar-brand" href="#/">Project Timothy</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			  <ul class="nav navbar-nav navbar-right">
+				<li><a href="#/">Disclaimer</a></li>
+				<li><a href="#/">Login</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+
+		<section>
+			<!-- This is a spacer to center the content - it will disappear on mobile -->
+			<div class="col-xs-12 col-sm-1"></div>
+			<!-- This will contain the main content of the app -->
+			<div class="col-xs-12 col-sm-10" ng-view></div>
+			<!-- This is a spacer to center the content - it will disappear on mobile -->
+			<div class="col-xs-12 col-sm-1"></div>
+		</section>
+
+	</body>
+
+</html>
